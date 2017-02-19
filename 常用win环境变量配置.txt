@@ -1,0 +1,9 @@
+当系统调用一个命令的时候，就会在PATH变量中注册的路径中寻找，如果注册的路径中有就调用，否则就提示命令没找到
+当把某些命令加入系统环境变量PATH中后，就可以在cmd中在任意目录下执行相关命令，很方便。
+
+下面这个环境变量的配置里加入了php,mysql,node,npm
+php和mysql是位于PHPstudy环境包
+node和npm是nodejs LTS v6.9.5 zip便携版
+这些应用都不是通过安装程序来安装的，而是便携版解压直接使用，所以不会被写入环境变量，所以需要进行如下的手动配置：
+
+%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;E:\phpStudy\php\php-5.6.27-nts;E:\phpStudy\MySQL\bin\;E:\Nodejs\;
